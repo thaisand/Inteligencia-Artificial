@@ -1,5 +1,5 @@
 # Árvores de Decisão - Métricas 
-
+#### Questão 01
 ### Matriz de confusão 
 | | A | B | C |
 | ------------- | ------------- | ------------- | ------------- |
@@ -25,14 +25,21 @@ Ac = (TVP+TVN)/(TVP+TVN+TFP+TFN)
 - F-measure = média harmônica entre precisão e sensibilidade. 
 FM = (2*Pr*Sens)/(Pr+Sens)
 
-|    |   TVP  |    TFN |   TFP  |   TVN   |  Precisão  | Recall | F-measure |
+Cálculos
+|    |   TVP  |    TFN |   TFP  |   TVN   |  Precisão  |    Recall    | F-measure |
 | ------------- | ------------- | ------------- | ------------- |------------- | ------------- | ------------- | ------------- |
-| A  | 30/60  | 30/60  | 25/135 | 110/135 | 30/(30+25)  |   |   |   |
-| B  | 60/70  | 10/70  | 20/130 | 110/130 | 60/(60+20) |   |   |   |
-| C  | 60/90  | 30/90  | 25/105 | 80/105  | 60/(60+25)  |   |   |   |
+| A  | 30/60  | 30/60  | 25/135 | 110/135 | 30/(30+25)  |  30/(30+30) |  (2*0.55*0.5)/(0.55+0.5)   |
+| B  | 60/70  | 10/70  | 20/130 | 110/130 | 60/(60+20)  |  60/(60+10) |  (2*0.75*0.86)/(0.75+0.86) |   
+| C  | 60/90  | 30/90  | 25/105 | 80/105  | 60/(60+25)  |  60/(60+30) |  (2*0.71*0.67)/(0.71+0.67) |   
 
+Resultados
 |    |   TVP  |    TFN |   TFP  |   TVN   |  Precisão  | Recall | F-measure |
 | ------------- | ------------- | ------------- | ------------- |------------- | ------------- | ------------- | ------------- |
-| A  | 0.5  | 0.5  | 0.18 | 0.81 | 30/(30+25)  |   |   |   |
-| B  | 0.86  | 0,14  | 0.15 | 110/130 | 60/(60+20) |   |   |   |
-| C  | 0.67  | 0,33  | 0.24 | 80/105  | 60/(60+25)  |   |   |   |
+| A  | 0.5   | 0.5   | 0.18 | 0.81 | 0.55  |  0.5  |  0.52 |   
+| B  | 0.86  | 0.14  | 0.15 | 0.85 | 0.75  | 0.86  |  0.8 |   
+| C  | 0.67  | 0.33  | 0.24 | 0.76 | 0.71  |  0.67 |  0.69 |   
+
+#### Questão 02
+A precisão indica quantas das instâncias classificadas como positivas são realmente positivas. Uma alta precisão significa que o modelo tem uma baixa taxa de falsos positivos, o que é importante em casos em que as consequências de uma classificação incorreta são graves. <br/>
+A sensibilidade indica quantas das instâncias positivas foram detectadas corretamente pelo modelo. Uma alta sensibilidade é importante em casos em que a identificação de todas as instâncias positivas é crucial, como no diagnóstico de uma doença. <br/>
+Sendo assim, a interpretação dos resultados de precisão e recall depende do contexto em que o modelo de classificação está sendo usado e das consequências das classificações incorretas. É importante avaliar ambas as métricas para ter uma visão mais completa do desempenho do modelo.
