@@ -43,3 +43,7 @@ Resultados
 A precisão indica quantas das instâncias classificadas como positivas são realmente positivas. Uma alta precisão significa que o modelo tem uma baixa taxa de falsos positivos, o que é importante em casos em que as consequências de uma classificação incorreta são graves. <br/>
 A sensibilidade indica quantas das instâncias positivas foram detectadas corretamente pelo modelo. Uma alta sensibilidade é importante em casos em que a identificação de todas as instâncias positivas é crucial, como no diagnóstico de uma doença. <br/>
 Sendo assim, a interpretação dos resultados de precisão e recall depende do contexto em que o modelo de classificação está sendo usado e das consequências das classificações incorretas. É importante avaliar ambas as métricas para ter uma visão mais completa do desempenho do modelo.
+
+#### Questão 03
+
+
