@@ -45,5 +45,13 @@ A sensibilidade indica quantas das instâncias positivas foram detectadas corret
 Sendo assim, a interpretação dos resultados de precisão e recall depende do contexto em que o modelo de classificação está sendo usado e das consequências das classificações incorretas. É importante avaliar ambas as métricas para ter uma visão mais completa do desempenho do modelo.
 
 #### Questão 03
+P(y|x) = P(y) * P(x|y) / P(x)
 
+Onde:
+
+- P(y|x) é a probabilidade posteriori da classe y dado a entrada x.
+- P(y) é a probabilidade a priori da classe y, ou seja, a probabilidade de que a classe y ocorra independentemente dos valores observados dos atributos de entrada.
+- P(x|y) é a probabilidade condicional da entrada x dado a classe y, ou seja, a probabilidade de observar a entrada x dado que a classe y é verdadeira.
+- P(x) é a probabilidade marginal da entrada x, ou seja, a probabilidade de observar a entrada x independentemente da classe. <br/>
+A probabilidade marginal P(x) pode ser ignorada, pois ela é constante para todas as classes e não afeta a classificação final.
 
