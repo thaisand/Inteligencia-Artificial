@@ -16,4 +16,5 @@ A ideia é escolher o atributo que divide melhor os exemplos em conjuntos que s�
 
 
 - Árvore de Classificação: 
+
 - Árvore de Regressão: 
